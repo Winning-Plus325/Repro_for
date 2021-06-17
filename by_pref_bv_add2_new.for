@@ -1,7 +1,7 @@
-c     çœŒåˆ¥ã®ï¼¡ï¼¢ï¼£indexã‚’ä½œæˆã™ã‚‹!å­ç‰›ç”Ÿç”£æŒ‡æ•°ã®ãƒ‡ãƒ¼ã‚¿ã‚’è¿½åŠ 
-C     ï¼˜æ­³æ™‚æœŸå¾…ç”£å­æ•°ã®è¨ˆç®—
-c     ï¼˜æ­³æ™‚ç”£å­æ•°ã¨ã¯ç¾æ‰€æœ‰è€…ãŒè‚²æˆæ™‚ã‹ã‚‰ï¼˜æ­³ã¾ã§é£¼é¤Šã—ãŸæ™‚ã«æœŸå¾…ã•ã‚Œã‚‹ç”£å­æ•°
-c     åˆç”£æœˆé½¢ãŠã‚ˆã³åˆ†å¨©é–“éš”ãŒå®Ÿéš›ã®è¨˜éŒ²ã‚’æŒã£ã¦åˆ†æã•ã‚ŒãŸç‰›ã®ã¿è¨ˆç®—ã™ã‚‹
+c     Œ§•Ê‚Ì‚`‚a‚bindex‚ğì¬‚·‚é!q‹¶Yw”‚Ìƒf[ƒ^‚ğ’Ç‰Á
+C     ‚WÎŠú‘ÒYq”‚ÌŒvZ
+c     ‚WÎYq”‚Æ‚ÍŒ»Š—LÒ‚ªˆç¬‚©‚ç‚WÎ‚Ü‚Å”—{‚µ‚½‚ÉŠú‘Ò‚³‚ê‚éYq”
+c     ‰YŒ—î‚¨‚æ‚Ñ•ª•ØŠÔŠu‚ªÀÛ‚Ì‹L˜^‚ğ‚Á‚Ä•ªÍ‚³‚ê‚½‹‚Ì‚İŒvZ‚·‚é
       implicit none
       integer,parameter :: hashn=10000000
       integer :: isex,id,ibir,isire,idam,jc,ilast,iw1,ip,neqn,count,iw2,
@@ -34,11 +34,11 @@ c     åˆç”£æœˆé½¢ãŠã‚ˆã³åˆ†å¨©é–“éš”ãŒå®Ÿéš›ã®è¨˜éŒ²ã‚’æŒã£ã¦åˆ†æã•ã‚
       open(1,file='bv_acc.dat',status='old')
       open(11,file='bv_acc.tmp')
       open(999,file='tmp.tmp')
-      open(2,file='bvinf',status='old') !æœ¬ç•ªã¯å¹³æˆå…ƒå¹´ä»¥é™ç”Ÿã¾ã‚Œã®é›Œç™»éŒ²ç‰›ã®bvinfã‚’ä½œæˆã™ã‚‹
-      write(*,*) 'åˆ†æãƒ•ã‚¡ã‚¤ãƒ«åã¯ï¼Ÿ'
+      open(2,file='bvinf',status='old') !–{”Ô‚Í•½¬Œ³”NˆÈ~¶‚Ü‚ê‚Ì““o˜^‹‚Ìbvinf‚ğì¬‚·‚é
+      write(*,*) '•ªÍƒtƒ@ƒCƒ‹–¼‚ÍH'
       read(*,*) dfile
       open(3,file=dfile,status='old')
-      open(4,file='C:\data\katsu\inbred\è¿‘äº¤ä¿‚æ•°\ketof',status='old')
+      open(4,file='C:\data\katsu\inbred\‹ßŒğŒW”\ketof',status='old')
       open(5,file='life1.dat',status='old')
       open(6,file='pe.dat',status='old')
       open(7,file='nocutREC.dat',status='old')
@@ -48,8 +48,8 @@ c     åˆç”£æœˆé½¢ãŠã‚ˆã³åˆ†å¨©é–“éš”ãŒå®Ÿéš›ã®è¨˜éŒ²ã‚’æŒã£ã¦åˆ†æã•ã‚
       open(111,file='fmc2add_re2_sort.dat',status='old')
       open(112,file='fm15_code_effect')
       open(12,file='effect_summary2.txt',status='old')
-c      open(13,file='kotomsa_c8.txt',status='old')!ï¼˜æ­³æ™‚å­ç‰›æ•°ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä½œæˆã—ã¦ãŠã
-      open(13,file='Kc8.txt',status='old') !nocutmakeC8.exeã‚’å®Ÿè¡Œ
+c      open(13,file='kotomsa_c8.txt',status='old')!‚WÎq‹”‚Ìƒtƒ@ƒCƒ‹‚ğì¬‚µ‚Ä‚¨‚­
+      open(13,file='Kc8.txt',status='old') !nocutmakeC8.exe‚ğÀs
 c      open(50,file='BVafccivALL39.dat')
 c      open(51,file='BVafccivALLEX.dat')
       open(60,file='stat_MESU.txt')
@@ -57,30 +57,30 @@ c      open(51,file='BVafccivALLEX.dat')
       open(102,file='bv_osuALL.dat')
       open(401,file='HANBVF')
       open(402,file='HANSTF')
-      !å…¨å¹³å‡ã®å–å¾—
+      !‘S•½‹Ï‚Ìæ“¾
       read(12,*) aaa,rua,ruc
       write(*,*) rua,ruc
-      write(*,*) 'åˆ†å¨©é–“éš”ã®è¨˜éŒ²ã¯ä½•åˆ—ç›®ã«å…¥ã£ã¦ã„ã¾ã™ã‹ï¼Ÿ'
+      write(*,*) '•ª•ØŠÔŠu‚Ì‹L˜^‚Í‰½—ñ–Ú‚É“ü‚Á‚Ä‚¢‚Ü‚·‚©H'
       read(*,*) nc
-      write(*,*) 'æœ€çµ‚åˆ†å¨©å¹´æœˆæ—¥ã¯ï¼Ÿ'
+      write(*,*) 'ÅI•ª•Ø”NŒ“ú‚ÍH'
       read(*,*) jlast
-      write(*,*) 'ãƒˆãƒ¬ã‚µæƒ…å ±ã‚’è€ƒæ…®ã—ã¦ä¾›ç”¨ä¸­åˆ¤å®šã‚’è¡Œã†ã‹ï¼ŸYES=>=1,NO=>2'
+      write(*,*) 'ƒgƒŒƒTî•ñ‚ğl—¶‚µ‚Ä‹Ÿ—p’†”»’è‚ğs‚¤‚©HYES=>=1,NO=>2'
       read(*,*) iyy
-      write(*,*) 'å­ç‰›ç”Ÿç”£æŒ‡æ•°ã®ãƒ‡ãƒ¼ã‚¿ãƒ•ã‚¡ã‚¤ãƒ«ã¯ï¼Ÿ'
+      write(*,*) 'q‹¶Yw”‚Ìƒf[ƒ^ƒtƒ@ƒCƒ‹‚ÍH'
       read(*,*) kfile
       open(21,file=kfile,status='old')
-      write(*,*) 'å­ç‰›ç”Ÿç”£æŒ‡æ•°ã®è‚²ç¨®ä¾¡ãƒ•ã‚¡ã‚¤ãƒ«ã¯ï¼Ÿ'
+      write(*,*) 'q‹¶Yw”‚Ìˆçí‰¿ƒtƒ@ƒCƒ‹‚ÍH'
       read(*,*) bfile
       open(22,file=bfile,status='old')
-      write(*,*) 'å­ç‰›ç”Ÿç”£æŒ‡æ•°ã®å…¨å¹³å‡ã¯ï¼Ÿï¼ˆæ›¸ã‹ãªã„å ´åˆã¯0.000ï¼‰'
+      write(*,*) 'q‹¶Yw”‚Ì‘S•½‹Ï‚ÍHi‘‚©‚È‚¢ê‡‚Í0.000j'
       read(*,*) rm
       write(*,*) 
-     +'å­ç‰›ç”Ÿç”£æŒ‡æ•°ã®ãƒ‰ãƒŠãƒ¼åŠ¹æœã®ãƒãƒ¼ãƒãƒ«ã®å€¤ã¯ï¼Ÿ(æ›¸ã‹ãªã„å ´åˆã¯0.000)'
+     +'q‹¶Yw”‚Ìƒhƒi[Œø‰Ê‚Ìƒm[ƒ}ƒ‹‚Ì’l‚ÍH(‘‚©‚È‚¢ê‡‚Í0.000)'
       read(*,*) rn
-      write(*,*) 'æ›´æ–°ç”¨ãƒ•ã‚¡ã‚¤ãƒ«ã‚‚ã“ã“ã§ä½œã‚Šã¾ã™'
-      write(*,*) 'è©•ä¾¡å¹´ã¯ï¼Ÿï¼ˆè¥¿æš¦ã®ï¼’æ¡ï¼šex 2014å¹´=>14)'
+      write(*,*) 'XV—pƒtƒ@ƒCƒ‹‚à‚±‚±‚Åì‚è‚Ü‚·'
+      write(*,*) '•]‰¿”N‚ÍHi¼—ï‚Ì‚QŒ…Fex 2014”N=>14)'
       read(*,*) Anen
-      write(*,*) 'è©•ä¾¡å›æ•°ã¯ï¼Ÿ'
+      write(*,*) '•]‰¿‰ñ”‚ÍH'
       read(*,*) Akai
       Abun=Anen//Akai
       do i=1,3
@@ -93,7 +93,7 @@ c      open(51,file='BVafccivALLEX.dat')
         if(ap(i)(1:1).eq.' ' ) ap(i)(1:1)='0'
         open(200+i,file='Bvafcciv_add'//ap(i)//'.dat')
       end do
-      write(*,*) 'å¯©æŸ»å¹´æœˆæ—¥ã®åˆ¶é™ã¯(2015å¹´ï¼”æœˆåˆ†æex:201209)'
+      write(*,*) 'R¸”NŒ“ú‚Ì§ŒÀ‚Í(2015”N‚SŒ•ªÍex:201209)'
       read(*,*) iym
       jflag=0
       write(9876,'(i7)') jlast
@@ -115,7 +115,7 @@ c      open(51,file='BVafccivALLEX.dat')
 c        read(13,'(13x,i9,93x,f10.3)') id,rw1
         read(13,'(i10,66x,f10.3)')id,rw1
         call hash( id,ip,neqn,count )
-        rk8(ip)=rw1 !ï¼˜æ­³æ™‚å­ç‰›æ•°
+        rk8(ip)=rw1 !‚WÎq‹”
       end do
       irecF=0
       rcage=0.0d0
@@ -124,15 +124,15 @@ c        read(13,'(13x,i9,93x,f10.3)') id,rw1
         read(7,'(x,i9,56x,i6,2x,i3,11x,f9.3,f9.3)') id,iciv,iw1,rage,rw1
         call hash( id,ip,neqn,count )
         if( rk8(ip).eq.0.and.iw1.ne.0.and.iw1.le.8.and.rage.lt.8.0)then
-          rcage(ip)=rage !ç›´è¿‘ã®ç”£æ¬¡ã®å¹´é½¢
-          ncp(ip)=iw1 !ç›´è¿‘ã®ç”£æ¬¡
+          rcage(ip)=rage !’¼‹ß‚ÌYŸ‚Ì”N—î
+          ncp(ip)=iw1 !’¼‹ß‚ÌYŸ
         end if
         if( iw1.ge.2.and.iciv.ne.0.and.jflag(ip).eq.1 ) then
           irecF(ip,2)=1
         end if
         if( jflag(ip).eq.1 ) then
           irecF(ip,1)=1
-          if( rw1.eq.0.0d0 ) irecF(ip,1)=0 !åˆç”£ãŒæµæ­»ç”£ãŠã‚ˆã³ETã«ä¾›ã—ãŸã‚‚ã®ã¯åˆç”£ã®è¨˜éŒ²ã¯ãã‚‚ãã‚‚ç„¡ã‹ã£ãŸã“ã¨ã«ã™ã‚‹
+          if( rw1.eq.0.0d0 ) irecF(ip,1)=0 !‰Y‚ª—¬€Y‚¨‚æ‚ÑET‚É‹Ÿ‚µ‚½‚à‚Ì‚Í‰Y‚Ì‹L˜^‚Í‚»‚à‚»‚à–³‚©‚Á‚½‚±‚Æ‚É‚·‚é
         end if
       end do
       bken='00'
@@ -176,7 +176,7 @@ c                   if( app(i).eq.'11') write(*,*) ifc(j),j !
                write(112,'(a14,i9,2f10.3)') fmc(j),ifc(j),(rwv(k),k=1,2)
 c                   write(*,*) '*' !
                    do k=1,2
-                     rfarm(j,k)=rwv(k) !14æ¡ã®è¾²å®¶ã‚³ãƒ¼ãƒ‰ã¨å¯¾å¿œã—ãŸåŠ¹æœã‚’å–å¾—
+                     rfarm(j,k)=rwv(k) !14Œ…‚Ì”_‰ÆƒR[ƒh‚Æ‘Î‰‚µ‚½Œø‰Ê‚ğæ“¾
                    end do
                 end if
               end do
@@ -232,7 +232,7 @@ c                   write(*,*) '*' !
         rv(ip)=rwv(1)
         np(ip)=iwv(1)
       end do
-      name='ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€'
+      name='@@@@@@@@'
       do while( .not.eof(4) )
         read(4,
      +'(i1,i9,16x,a16,4x,i7,i10,x,i9,44x,a2,13x,a2,13x,14x,i7,8x,a7)') 
@@ -243,7 +243,7 @@ c                   write(*,*) '*' !
         iped(ip,2)=idam
         if( bb2.ne.'00') aa2=bb2
         aken(ip)=aa2
-c        if( iw1.ge.jlast.and.isex.eq.2 ) then !bvinfã¸
+c        if( iw1.ge.jlast.and.isex.eq.2 ) then !bvinf‚Ö
 c          if( iyy.ne.1 )then
 c            ireal(ip)=1
 c          else
@@ -293,7 +293,7 @@ c        end if
         read(1,'(2i11,4f10.4,2i8)')
      +   id,iw1,((rwv(j),rwv2(j)),j=1,2),(iwv(j),j=1,2)
         do j=1,2
-c          call rounda2(rwv(j),ic) !å°æ•°ç‚¹ç¬¬ï¼”ä½ã‚’å››æ¨äº”å…¥ã—ã¦å°æ•°ç‚¹ç¬¬ï¼“ä½ã¾ã§ã‚ã¤ã‹ã†
+c          call rounda2(rwv(j),ic) !¬”“_‘æ‚SˆÊ‚ğlÌŒÜ“ü‚µ‚Ä¬”“_‘æ‚RˆÊ‚Ü‚Å‚ ‚Â‚©‚¤
 c          call rounda2(rwv2(j),ic)!
            call rounda(rwv(j))
            call rounda(rwv2(j))
@@ -322,11 +322,11 @@ c          call rounda(rwv2(j))
           rac(ip,j)=rwv2(j)
         end do
         if( iwv(1).ne.0 ) iflag2(ip2)=iflag2(ip2)+1
-        if( iwv(2).ne.0 ) iflag(ip2)=iflag(ip2)+1 !è¨˜éŒ²ã®ã‚ã‚‹å¾Œä»£ãŒã„ã¾ã™ãƒ•ãƒ©ã‚°ã‚’çˆ¶ã«ç«‹ã¦ã‚‹
-        iflag(ip3)=1 !å¾Œä»£ãŒã„ã¾ã™ãƒ•ãƒ©ã‚°ã‚’æ¯ã«ãŸã¦ã‚‹=>å¾Œä»£ãŒã„ã¾ã™ãƒ•ãƒ©ã‚°ã®ç«‹ã£ã¦ã„ãªã„è¨˜éŒ²ãªã—ã®å€‹ä½“ã¯æœŸå¾…è‚²ç¨®ä¾¡æ‰±ã„ã«ã™ã‚‹ã€‚
+        if( iwv(2).ne.0 ) iflag(ip2)=iflag(ip2)+1 !‹L˜^‚Ì‚ ‚éŒã‘ã‚ª‚¢‚Ü‚·ƒtƒ‰ƒO‚ğ•ƒ‚É—§‚Ä‚é
+        iflag(ip3)=1 !Œã‘ã‚ª‚¢‚Ü‚·ƒtƒ‰ƒO‚ğ•ê‚É‚½‚Ä‚é=>Œã‘ã‚ª‚¢‚Ü‚·ƒtƒ‰ƒO‚Ì—§‚Á‚Ä‚¢‚È‚¢‹L˜^‚È‚µ‚ÌŒÂ‘Ì‚ÍŠú‘Òˆçí‰¿ˆµ‚¢‚É‚·‚éB
       end do
       rewind(11)
-      kigo='ã€€'
+      kigo='@'
       na=0
       ave=0
       sd=0
@@ -357,14 +357,14 @@ c          call rounda(rwv2(j))
         read(11,'(2i11,4f10.4,2i8)') 
      +   id,iw1,((rwv(j),rwv2(j)),j=1,2),(iwv(j),j=1,2)
         call hash( id,ip,neqn,count )
-ã€€      do j=1,2!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!è¨˜éŒ²ã‚’æŒã¤å¾Œä»£ã®ã„ãªã„ã‚‚ã®ã‚’æœŸå¾…è‚²ç¨®ä¾¡ã«ã—ã¦ã„ãŸãŒ201910è©•ä¾¡ã‚ˆã‚Šã“ã®ãƒ«ãƒ¼ãƒãƒ³ã‚’å‰Šé™¤ã—ãŸã®ã‚’202110ã‚ˆã‚Šå¾©æ´»ã•ã›ã‚‹ã€‚
+        do j=1,2!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!‹L˜^‚ğ‚ÂŒã‘ã‚Ì‚¢‚È‚¢‚à‚Ì‚ğŠú‘Òˆçí‰¿‚É‚µ‚Ä‚¢‚½‚ª201910•]‰¿‚æ‚è‚±‚Ìƒ‹[ƒ`ƒ“‚ğíœ‚µ‚½‚Ì‚ğ202110‚æ‚è•œŠˆ‚³‚¹‚éB
           if( iflag(ip).eq.0.and.iwv(j).eq.0 ) then
-            kigo(ip,j)='æœŸ'
+            kigo(ip,j)='Šú'
             ikigo(ip,j)=2
             write(99,'(i10)') id
           else
             ikigo(ip,j)=1
-          end if!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!è¨˜éŒ²ã‚’æŒã¤å¾Œä»£ã®ã„ãªã„ã‚‚ã®ã‚’æœŸå¾…è‚²ç¨®ä¾¡ã«ã—ã¦ã„ãŸãŒ201910è©•ä¾¡ã‚ˆã‚Šã“ã®ãƒ«ãƒ¼ãƒãƒ³ã‚’å‰Šé™¤ã—ãŸã®ã‚’202110ã‚ˆã‚Šå¾©æ´»ã•ã›ã‚‹ã€‚
+          end if!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!‹L˜^‚ğ‚ÂŒã‘ã‚Ì‚¢‚È‚¢‚à‚Ì‚ğŠú‘Òˆçí‰¿‚É‚µ‚Ä‚¢‚½‚ª201910•]‰¿‚æ‚è‚±‚Ìƒ‹[ƒ`ƒ“‚ğíœ‚µ‚½‚Ì‚ğ202110‚æ‚è•œŠˆ‚³‚¹‚éB
         end do
         if( id.lt.1000000000 ) then
           write(101,'(i11,4f10.4,2i3,2i7,i5,2i3)')
@@ -382,7 +382,7 @@ c          call rounda(rwv2(j))
           do i=1,47
             if( ap(i).eq.aken(ip) ) then
               do j=1,2
-                if( kigo(ip,j).ne.'æœŸ' ) then
+                if( kigo(ip,j).ne.'Šú' ) then
                   na(i,j)=na(i,j)+1
                   if( i.eq.2.and.j.eq.2) write(2222,'(i10)') id
                   if( na(i,j).eq.1 ) then
@@ -423,7 +423,7 @@ c          call rounda(rwv2(j))
         else
           do j=1,2
           if( id.lt.1000000000) then
-            if( kigo(ip,j).ne.'æœŸ' ) then
+            if( kigo(ip,j).ne.'Šú' ) then
               nah(j)=nah(j)+1
               aveh(j)=aveh(j)+rwv(j)
               aveh2(j)=aveh2(j)+rwv2(j)
@@ -494,7 +494,7 @@ c          call rounda(rwv2(j))
             sd(i,j)=
      +   dsqrt((sd(i,j)-ave(i,j)**2/dble(na(i,j)))/dble(na(i,j)-1))
             ave(i,j)=ave(i,j)/dble(na(i,j))
-            ave2(i,j)=ave2(i,j)/dble(na(i,j)) !æ­£ç¢ºåº¦ã®å¹³å‡
+            ave2(i,j)=ave2(i,j)/dble(na(i,j)) !³Šm“x‚Ì•½‹Ï
           else
             sd(i,j)=0
           end if
@@ -681,7 +681,7 @@ c        call rounda2(rk(k),ic)
       do while( .not.eof(2) )
         read(2,
      +'(i1,i9,21x,a16,i1,3i2,i10,16x,x,i9,42x,i5,11x,a62,a15,a20,3x,
-     + i7,a10,8x,7x,i11,x,a16)') !i7,a10,8x,7x,<a11>,x,a16ã‚’ä¿®æ­£
+     + i7,a10,8x,7x,i11,x,a16)') !i7,a10,8x,7x,<a11>,x,a16‚ğC³
      +isex,id,aa16,(ibb(j),j=1,4),
      +isire,idam,jc,aa62,aa15,aa20,ilast,aj10,idbs,abs
         call wasei(ibb,is)
@@ -690,9 +690,9 @@ c        call rounda2(rk(k),ic)
         ibir=ibb(1)*1000000+ibb(2)*10000+ibb(3)*100+ibb(4)
         if( isex.eq.1 ) id=1000000000+id
         nk=0
-        bb24='ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€'
+        bb24='@@@@@@@@@@@@'
         do i=1,31
-          if( aa62(2*i-1:2*i).ne.'ã€€' ) then
+          if( aa62(2*i-1:2*i).ne.'@' ) then
             nk=nk+1
             if(nk.ge.13) exit
             bb24(2*nk-1:2*nk)=aa62(2*i-1:2*i)
@@ -703,36 +703,36 @@ c        call rounda2(rk(k),ic)
         call hash(iped(ip,2),ip3,neqn,count )
         call hash(iped(ip3,1),ip4,neqn,count )
         do j=1,2
-          if( rbv(ip,j).ne.-999.999d0.and.kigo(ip,j).eq.'ã€€' ) then
-            kigo(ip,j)='æ¨'
+          if( rbv(ip,j).ne.-999.999d0.and.kigo(ip,j).eq.'@' ) then
+            kigo(ip,j)='„'
           else
-            if( kigo(ip,j).eq.'æœŸ' ) then
+            if( kigo(ip,j).eq.'Šú' ) then
               cycle
-            else !æœŸå¾…è‚²ç¨®ä¾¡ã®è¨ˆç®—
-              if( rbv(ip2,j).ne.-999.999d0.and.kigo(ip2,j).ne.'æœŸ'
-     +       .and.rbv(ip3,j).ne.-999.999d0.and.kigo(ip3,j).ne.'æœŸ'
-     +        .and.rac(ip2,1).ge.0.85d0.and.rac(ip2,2).ge.0.85d0)then !ç¨®é›„ç‰›ã®æ­£ç¢ºåº¦ã¯0.85ä»¥ä¸Š
-c                if( irecF(ip,j).ne.1 ) then !å®Ÿéš›ã®è¨˜éŒ²ãŒã‚ã‚‹ã®ã«é™¤å¤–ã•ã‚ŒãŸå€‹ä½“ã«ã¤ã„ã¦ã¯æœŸå¾…è‚²ç¨®ä¾¡ã‚’è¨ˆç®—ã—ãªã„!!!!!!!!!!2019/10ã‚ˆã‚Šå‰Šé™¤
+            else !Šú‘Òˆçí‰¿‚ÌŒvZ
+              if( rbv(ip2,j).ne.-999.999d0.and.kigo(ip2,j).ne.'Šú'
+     +       .and.rbv(ip3,j).ne.-999.999d0.and.kigo(ip3,j).ne.'Šú'
+     +        .and.rac(ip2,1).ge.0.85d0.and.rac(ip2,2).ge.0.85d0)then !í—Y‹‚Ì³Šm“x‚Í0.85ˆÈã
+c                if( irecF(ip,j).ne.1 ) then !ÀÛ‚Ì‹L˜^‚ª‚ ‚é‚Ì‚ÉœŠO‚³‚ê‚½ŒÂ‘Ì‚É‚Â‚¢‚Ä‚ÍŠú‘Òˆçí‰¿‚ğŒvZ‚µ‚È‚¢!!!!!!!!!!2019/10‚æ‚èíœ
                   rbv(ip,j)=(rbv(ip2,j)+rbv(ip3,j))/2.0d0
-c                  call rounda2(rbv(ip,j),ic) !å°æ•°ç‚¹ç¬¬ï¼”ä½ã‚’å››æ¨äº”å…¥ã—ã¦ï¼“æ¡ã«
+c                  call rounda2(rbv(ip,j),ic) !¬”“_‘æ‚SˆÊ‚ğlÌŒÜ“ü‚µ‚Ä‚RŒ…‚É
                   call rounda(rbv(ip,j))
                   write(999,'(f10.3)') rbv(ip,j)
                   backspace(999)
                   read(999,'(f10.3)') rbv(ip,j)
                   rac(ip,j)=sqrt(rac(ip2,j)**2+rac(ip3,j)**2)/2.0d0
-c                  call rounda2(rac(ip,j),ic) !å°æ•°ç‚¹ç¬¬ï¼”ä½ã‚’å››æ¨äº”å…¥ã—ã¦ï¼“æ¡ã«
+c                  call rounda2(rac(ip,j),ic) !¬”“_‘æ‚SˆÊ‚ğlÌŒÜ“ü‚µ‚Ä‚RŒ…‚É
                   call rounda(rac(ip,j))
                   write(999,'(f10.3)') rac(ip,j)
                   backspace(999)
                   read(999,'(f10.3)') rac(ip,j)
-                  kigo(ip,j)='æœŸ'
+                  kigo(ip,j)='Šú'
                   write(98,'(i10,i2)') id,j
-c                end if!!!!!!!!!!2019/10ã‚ˆã‚Šå‰Šé™¤
+c                end if!!!!!!!!!!2019/10‚æ‚èíœ
               end if
             end if
           end if
         end do
-        ABC='-ã€€'
+        ABC='-@'
         SG=-9.999d0
         do i=1,47
           if( ap(i).eq.aken(ip) ) then
@@ -747,18 +747,18 @@ c                call rounda2(sg(j),ic)
                 read(999,'(f10.3)') sg(j)
                 sg2(ip,j)=sg(j)
                 if( sg(j).le.-0.67d0 ) then
-                  ABC(j)='Aã€€'
+                  ABC(j)='A@'
                 else
                   if( sg(j).lt.-0.0d0 ) then
-                    ABC(j)='Bã€€'
+                    ABC(j)='B@'
                   else
                     if( rbv(ip,j).le.ave(i,j) ) then
-                      ABC(j)='Bã€€'
+                      ABC(j)='B@'
                     else
                       if( sg(j).le.0.67d0) then
-                        ABC(j)='Cã€€'
+                        ABC(j)='C@'
                       else
-                        ABC(j)="CÂ´"
+                        ABC(j)="CL"
                       end if
                     end if
                   end if
@@ -775,26 +775,26 @@ c        end do
         else
           pebv=-999.999d0
         end if
-c        do j=1,2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ã“ã“ã®ãƒ«ãƒ¼ãƒãƒ³ã¯å‰Šé™¤ã€‚ã€ŒæœŸå¾…è‚²ç¨®ä¾¡ã€(å®Ÿéš›ã¯æ¨å®šã®ã‚‚ã®ã‚‚å«ã‚€ï¼‰ã¯ç”Ÿã‹ã™ã€‚2019/10/3
-c          if( irecF(ip,j).eq.1.and. !å®Ÿéš›ã«è¨˜éŒ²ã¯ã‚ã‚‹
-c     +        iflag(ip).eq.0.and.   !å¾Œä»£ãŒã„ãªã„
-c     +        kigo(ip,j).eq.'æœŸ' ) then !æœŸå¾…è‚²ç¨®ä¾¡ãŒè¨ˆç®—ã•ã‚Œã¦ã„ã‚‹
+c        do j=1,2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!‚±‚±‚Ìƒ‹[ƒ`ƒ“‚ÍíœBuŠú‘Òˆçí‰¿v(ÀÛ‚Í„’è‚Ì‚à‚Ì‚àŠÜ‚Şj‚Í¶‚©‚·B2019/10/3
+c          if( irecF(ip,j).eq.1.and. !ÀÛ‚É‹L˜^‚Í‚ ‚é
+c     +        iflag(ip).eq.0.and.   !Œã‘ã‚ª‚¢‚È‚¢
+c     +        kigo(ip,j).eq.'Šú' ) then !Šú‘Òˆçí‰¿‚ªŒvZ‚³‚ê‚Ä‚¢‚é
 c              rbv(ip,j)=-999.999d0
 c              sg(j)=-9.999d0
 c              rac(ip,j)=-999.999d0
-c              kigo(ip,j)='ã€€'
-c              abc(j)='-ã€€'
+c              kigo(ip,j)='@'
+c              abc(j)='-@'
 c              if( j.eq.2 ) pebv=-999.999d0
 c              write(9,'(i10)') id
 c          end if!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 c        end do
-        !ï¼˜æ­³æ™‚æœŸå¾…ç”£å­æ•°ã®è¨ˆç®—
+        !‚WÎŠú‘ÒYq”‚ÌŒvZ
         r8=0.0d0
         rka=0.0d0
         rkc=0.0d0
         rf=0.0d0
         if8=0
-        if( kigo(ip,1).eq.'æ¨'.and.pebv.ge.-999.and.rd(ip,1).ge.18.0d0  !åˆç”£æœˆé½¢ã‚‚åˆ†å¨©é–“éš”ã‚‚åˆ†æã—ãŸè¨˜éŒ²ã‚’æŒã£ã¦ã„ã‚‹ã‚‚ã®ãŒå¯¾è±¡ã€‚
+        if( kigo(ip,1).eq.'„'.and.pebv.ge.-999.and.rd(ip,1).ge.18.0d0  !‰YŒ—î‚à•ª•ØŠÔŠu‚à•ªÍ‚µ‚½‹L˜^‚ğ‚Á‚Ä‚¢‚é‚à‚Ì‚ª‘ÎÛB
      +      .and.rd(ip,1).lt.37.0d0.and.irecF(ip,1).eq.1   ) then
 c         if( rbv(ip,1).ge.-999.and.rbv(ip,2).ge.-999) then
           do i=1,nnp
@@ -802,7 +802,7 @@ c         if( rbv(ip,1).ge.-999.and.rbv(ip,2).ge.-999) then
               do j=iip(i),iip(i+1)-1
                 if( fmc(j).eq.aa15(1:14) )then
                   do k=1,2
-                    rf(k)=rfarm(j,k) !ç¾æ‰€æœ‰è€…ã®è¾²å®¶ã®åŠ¹æœ
+                    rf(k)=rfarm(j,k) !Œ»Š—LÒ‚Ì”_‰Æ‚ÌŒø‰Ê
                   end do
                   go to 9
                 end if
@@ -814,7 +814,7 @@ c         if( rbv(ip,1).ge.-999.and.rbv(ip,2).ge.-999) then
           end do
 9         continue
 c          rka=rua+rbv(ip,1)+rf(1)
-          rka=rd(ip,1) !åˆç”£æœˆé½¢ã¯å®Ÿç¸¾ã‚’ã‚‚ã¡ã„ã‚‹
+          rka=rd(ip,1) !‰YŒ—î‚ÍÀÑ‚ğ‚à‚¿‚¢‚é
           rkc=ruc+pebv+rf(2)
           R8=(8.0d0*365.0d0-rka*(365.0d0/12.0d0))/rkc+1
           if( age.ge.8.0d0) then!4280401
@@ -1146,7 +1146,7 @@ c
 c
 c-----------------------------------------------------------------------
 c      PARAMETER(M=31,M1=17) !origin
-       PARAMETER(M=10000000,M1=999983) !ç´ æ•°
+       PARAMETER(M=10000000,M1=999983) !‘f”
 
       INTEGER COUNT
       INTEGER NQARAY(M),IDARAY(M)
@@ -1175,7 +1175,7 @@ c
       SUBROUTINE rounda(rv1)
 c
 c-----------------------------------------------------------------------
-c     å››æ¨äº”å…¥ã‚µãƒ–ãƒ«ãƒ¼ãƒãƒ³
+c     lÌŒÜ“üƒTƒuƒ‹[ƒ`ƒ“
       implicit none
       real(8) :: rv1
       if( rv1.ge.0.0d0 ) then
@@ -1191,7 +1191,7 @@ c
       SUBROUTINE rounda3(rv1)
 c
 c-----------------------------------------------------------------------
-c     å››æ¨äº”å…¥ã‚µãƒ–ãƒ«ãƒ¼ãƒãƒ³
+c     lÌŒÜ“üƒTƒuƒ‹[ƒ`ƒ“
       implicit none
       real(8) :: rv1
       if( rv1.gt.0.0d0 ) then
@@ -1203,7 +1203,7 @@ c     å››æ¨äº”å…¥ã‚µãƒ–ãƒ«ãƒ¼ãƒãƒ³
       end
 c----------------------------------------------------------------------
 c-------------------------------------------------------
-c     å’Œæš¦ã‹ã‚‰è¥¿æš¦ã«å¤‰æ›ã™ã‚‹
+c     ˜a—ï‚©‚ç¼—ï‚É•ÏŠ·‚·‚é
       SUBROUTINE WASEI( Iw,Is )
         IMPLICIT NONE
         INTEGER :: Iw(4),Is(3),j
@@ -1218,7 +1218,7 @@ C-----------------------------------------------------------------------
         RETURN
       END SUBROUTINE WASEI
 c-------------------------------------------------------
-c     è¥¿æš¦0å¹´1æœˆ1æ—¥ã‹ã‚‰ã®æ—¥æ•°ã‚’è¨ˆç®—ã™ã‚‹
+c     ¼—ï0”N1Œ1“ú‚©‚ç‚Ì“ú”‚ğŒvZ‚·‚é
       SUBROUTINE CALEND( ICHI,IWV )
         IMPLICIT NONE
         INTEGER :: IWV(3),ICHI
@@ -1272,7 +1272,7 @@ c
       SUBROUTINE rounda2(rv1,ic)
 c
 c-----------------------------------------------------------------------
-c     å››æ¨äº”å…¥ã‚µãƒ–ãƒ«ãƒ¼ãƒãƒ³
+c     lÌŒÜ“üƒTƒuƒ‹[ƒ`ƒ“
       implicit none
       real(8) :: rv1
       integer ic,iv1
