@@ -3,8 +3,12 @@ C     ‚WÎŠú‘ÒYq”‚ÌŒvZ
 c     ‚WÎYq”‚Æ‚ÍŒ»Š—LÒ‚ªˆç¬‚©‚ç‚WÎ‚Ü‚Å”—{‚µ‚½‚ÉŠú‘Ò‚³‚ê‚éYq”
 c     ‰YŒ—î‚¨‚æ‚Ñ•ª•ØŠÔŠu‚ªÀÛ‚Ì‹L˜^‚ğ‚Á‚Ä•ªÍ‚³‚ê‚½‹‚Ì‚İŒvZ‚·‚é
 c     C³‚ÌƒeƒXƒg
+<<<<<<< Updated upstream
 c     ÄC³
 c     2021/6/18³”F‚ğ‹‚ß‚éC³‚ÌƒeƒXƒg 
+=======
+c     ÄC³‚»‚Ì‚Q
+>>>>>>> Stashed changes
       implicit none
       integer,parameter :: hashn=10000000
       integer :: isex,id,ibir,isire,idam,jc,ilast,iw1,ip,neqn,count,iw2,
